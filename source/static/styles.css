@@ -3,6 +3,7 @@
 body {
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
 }
 
 /* HEADER */
@@ -37,7 +38,7 @@ body {
 	padding: 35px 20px;
 }
 
-/* MAIN */
+/* SPLASH SCREEN */
 
 .start-page {
 	display: flex;
@@ -53,7 +54,6 @@ body {
 }
 
 .start-page h1 {
-	font-family: "Lato", sans-serif;
 	font-size: 60px;
 	color: white;
 	font-weight: bold;
@@ -61,7 +61,6 @@ body {
 }
 
 .start-page p {
-	font-family: "Lato", sans-serif;
 	font-size: 20px;
 	color: white;
 	font-weight: bold;
@@ -74,11 +73,62 @@ body {
 	padding: 10px 25px;
 	border: none;
 	border-radius: 5px;
-	font-family: "Lato", sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	cursor: pointer;
 	box-shadow: 0px 0px 20px rba(255, 255, 255, 0.4);
+}
+
+/* LOGIN PAGE */
+.site-background {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 100px 0px;
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("source/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.login-form {
+	background-color: white;
+	width: 300px;
+	height: auto;
+	padding: 10px 30px;
+}
+
+.login-form .login-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	background-color: pink;
+	color: black;
+	padding: 10px 25px;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "Lato", sans-serif;
+	cursor: pointer;
+	box-shadow: 0px 0px 20px rba(255, 255, 255, 0.4);
+	
+}
+
+.login-form .textform {
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-family: "Lato", sans-serif;
+}
+
+.login-form #login-system-msg {
+	color: red;
 }
 
 /* FOOTER */
