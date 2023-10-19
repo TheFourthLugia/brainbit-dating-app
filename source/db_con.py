@@ -25,7 +25,7 @@ if __name__ == "__main__":
     for r in cur.fetchall():
         print(r)
 
-    cur.execute("create table music ( song_name varchar(255), rating int);")
+    cur.execute("create table brain (id int,movieID string(255), data string);")
     db.commit()
 
 
