@@ -25,7 +25,8 @@ if __name__ == "__main__":
     for r in cur.fetchall():
         print(r)
 
-    cur.execute("CREATE TABLE brain (id INTEGER,movieID STRING(255), data STRING);")
+    cur.execute("CREATE TABLE brain (id INTEGER PRIMARY KEY, movieID TEXT(255), data TEXT);")
+  
     db.commit()
 
 
