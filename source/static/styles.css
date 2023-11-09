@@ -38,6 +38,10 @@ body {
 	padding: 35px 20px;
 }
 
+#neurobit_logo {
+	height: 50px;
+}
+
 /* PROFILE PAGE HEADER */
 .slim-header {
 	display: flex;
